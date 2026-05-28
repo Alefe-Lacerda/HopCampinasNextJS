@@ -1,5 +1,4 @@
 import Navbar from "../layouts/navbar";
-import Head from "next/head";
 import "../globals.css";
 import { Roboto, Cinzel, Playfair_Display } from "next/font/google";
 
@@ -23,7 +22,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           className={`${roboto.variable} ${cinzel.variable} ${playfairDisplay.variable}`}
         >
           <Navbar />
-          <main>{children}</main>
+          <main style={{ marginLeft: "215px" }}>{children}</main>
         </body>
       </html>
     </>

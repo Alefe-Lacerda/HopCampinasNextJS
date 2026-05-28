@@ -1,7 +1,15 @@
 "use client";
 import Image from "next/image";
 import style from "./navbar.module.css";
-import { InfoIcon, CalendarCheckIcon, ImagesIcon, NoteIcon } from "@phosphor-icons/react";
+import {
+  InfoIcon,
+  CalendarCheckIcon,
+  ImagesIcon,
+  NoteIcon,
+  InstagramLogoIcon,
+  FacebookLogoIcon,
+  YoutubeLogoIcon,
+} from "@phosphor-icons/react";
 
 const Navbar = () => {
   return (
@@ -16,24 +24,40 @@ const Navbar = () => {
       />
       <div className={style.line} />
       <div className={style.menu}>
-        <a className={style.menuItem}>
+        <a>
           <InfoIcon size={28} />
           <span>Sobre nós</span>
         </a>
-        <a className={style.menuItem}>
+        <a>
           <CalendarCheckIcon size={28} />
           <span>Eventos</span>
         </a>
-        <a className={style.menuItem}>
-          <ImagesIcon size={24} />
+        <a>
+          <ImagesIcon size={28} />
           <span>Mídias</span>
         </a>
-        <a className={style.menuItem}>
-          <NoteIcon size={24} />
+        <a>
+          <NoteIcon size={28} />
           <span>Blog</span>
         </a>
       </div>
-      <div style={{ top: "50px" }} className={style.line} />
+      <div style={{ marginTop: "auto" }} className={style.line} />
+      <div className={style.socialMediaMenu}>
+        <a href="https://www.instagram.com/hopcampinas/" target="_blank" rel="noopener noreferrer">
+          <InstagramLogoIcon size={32} />
+        </a>
+        <a href="https://www.facebook.com/hopcampinas" target="_blank" rel="noopener noreferrer">
+          <FacebookLogoIcon size={32} />
+        </a>
+        <a
+          href="https://www.youtube.com/@hopcampinas2818"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <YoutubeLogoIcon size={32} />
+        </a>
+      </div>
+      <span className={style.email}>contato@hopcampinas.com.br</span>
     </div>
   );
 };
