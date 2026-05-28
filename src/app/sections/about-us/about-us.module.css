@@ -3,14 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container span {
   font-size: 22px;
   font-family: var(--font-cinzel);
   color: #E4B600;
-  letter-spacing: 42%;
+  letter-spacing: 0.42em;
 }
 
 .container h1 {
@@ -23,16 +23,17 @@
 .subtitle {
   font-size: 24px;
   font-style: italic;
-  margin-top: 15px;
+  margin-bottom: 12px;
 }
 
 .description {
   font-size: 18px;
   font-family: var(--font-roboto);
-  width: 525px;
+  max-width: 530px;
+  width: 90%;
   text-align: center;
-  letter-spacing: 10%;
+  letter-spacing: 0.1em;
   opacity: 0.8;
-  line-height: 200%;
+  line-height: 1.4;
   margin-top: 20px;
 }
