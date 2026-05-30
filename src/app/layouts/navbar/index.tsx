@@ -24,19 +24,19 @@ const Navbar = () => {
       />
       <div className={style.line} />
       <div className={style.menu}>
-        <a>
+        <a href="/">
           <InfoIcon size={28} />
           <span>Sobre nós</span>
         </a>
-        <a>
+        <a href="/eventos">
           <CalendarCheckIcon size={28} />
           <span>Eventos</span>
         </a>
-        <a>
+        <a href="/midias">
           <ImagesIcon size={28} />
           <span>Mídias</span>
         </a>
-        <a>
+        <a href="/blog">
           <NoteIcon size={28} />
           <span>Blog</span>
         </a>
