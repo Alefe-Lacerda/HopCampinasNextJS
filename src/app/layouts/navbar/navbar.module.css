@@ -27,11 +27,13 @@
 }
 
 .menu a {
+  text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 5px;
   cursor: pointer;
+  color: white;
 }
 
 .menu a:hover {
@@ -44,6 +46,10 @@
 
 .menu a span {
   font-size: 24px
+}
+
+a:visited {
+  color: white
 }
 
 .socialMediaMenu {
