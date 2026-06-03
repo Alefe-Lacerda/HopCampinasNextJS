@@ -1,7 +1,13 @@
 import AboutUs from "../sections/about-us/about-us";
+import Home from "../sections/home/home";
 
-const Home = () => {
-  return <AboutUs />;
+const InitialPage = () => {
+  return (
+    <>
+      <Home />
+      <AboutUs />
+    </>
+  );
 };
 
-export default Home;
+export default InitialPage;

@@ -5,6 +5,14 @@
 }
 
 body {
-  background-color: #20302B;
+  background-color: var(--background-primary);
   color: #ffffff;
+}
+
+:root {
+  --color-primary: #4E7468;
+  --color-secondary: #6C757D;
+  --color-tertiary: #E4B600;
+  --background-primary: #20302B;
+  --background-secondary: #1E4035;
 }
