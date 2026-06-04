@@ -31,14 +31,16 @@
   align-items: center;
   gap: 5px;
   cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .menu a:hover {
   transition: linear 0.4s;
   color: var(--color-primary);
-  border-radius: 20px;
+  border-radius: 14px;
   background-color: #f6f2ce;
-  padding: 7px;
+  padding: 2px;
 }
 
 .menu a span {
