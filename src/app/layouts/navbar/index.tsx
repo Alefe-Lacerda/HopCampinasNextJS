@@ -29,7 +29,7 @@ const Navbar = () => {
           <InfoIcon size={28} />
           <span>Sobre nós</span>
         </a>
-        <a>
+        <a href="#events">
           <CalendarCheckIcon size={28} />
           <span>Eventos</span>
         </a>
