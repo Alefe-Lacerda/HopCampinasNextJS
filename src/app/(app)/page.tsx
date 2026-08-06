@@ -1,7 +1,15 @@
 import AboutUs from "../sections/about-us/about-us";
+import Events from "../sections/events/events";
+import Home from "../sections/home/home";
 
-const Home = () => {
-  return <AboutUs />;
+const InitialPage = () => {
+  return (
+    <>
+      <Home />
+      <AboutUs />
+      <Events />
+    </>
+  );
 };
 
-export default Home;
+export default InitialPage;

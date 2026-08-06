@@ -17,18 +17,19 @@ const Navbar = () => {
       <Image
         style={{ cursor: "pointer", margin: "12px" }}
         alt="Logo HOP"
-        src="/logoHop.png"
+        src="/images/logoHop.png"
         width={175}
         height={78}
         loading="eager"
+        onClick={() => window.scrollTo({ top: 0 })}
       />
       <div className={style.line} />
       <div className={style.menu}>
-        <a>
+        <a href="#sobre-nos">
           <InfoIcon size={28} />
           <span>Sobre nós</span>
         </a>
-        <a>
+        <a href="#events">
           <CalendarCheckIcon size={28} />
           <span>Eventos</span>
         </a>

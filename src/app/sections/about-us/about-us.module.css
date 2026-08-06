@@ -1,39 +1,73 @@
 .container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 120px;
+  flex-direction: row;
   min-height: 100vh;
+  gap: 100px;
+  background-color: var(--background-secondary);
 }
 
-.container span {
-  font-size: 22px;
+.leftContent {
+  width: 50%;
+}
+
+.image {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 18px;
   font-family: var(--font-cinzel);
-  color: #E4B600;
+  color: var(--color-tertiary);
   letter-spacing: 0.42em;
 }
 
 .container h1 {
-  font-size: 78px;
-  font-weight: 500;
+  font-size: 52px;
   font-family: var(--font-playfair-display);
-  margin-top: -25px;
-}
-
-.subtitle {
-  font-size: 24px;
-  font-style: italic;
-  margin-bottom: 12px;
+  margin-top: -15px;
+  margin-bottom: 40px;
 }
 
 .description {
   font-size: 18px;
   font-family: var(--font-roboto);
-  max-width: 530px;
-  width: 90%;
-  text-align: center;
+  width: 50%;
+  line-height: 1.7;
+}
+
+.cardboard {
+  display: flex;
+  margin-top: 40px;
+  align-items: stretch;
+  width: 75%;
+  background-color: var(--background-primary);
+  flex-direction: row;
+}
+
+.verticalLine {
+  width: 5px;
+  align-self: stretch;
+  background-color: var(--color-tertiary);
+  margin-right: 25px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.cardContent span {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.cardContent p {
+  color: var(--color-tertiary);
+  font-size: 14px;
+  font-family: var(--font-cinzel);
+  margin-top: 10px;
   letter-spacing: 0.1em;
-  opacity: 0.8;
-  line-height: 1.4;
-  margin-top: 20px;
 }

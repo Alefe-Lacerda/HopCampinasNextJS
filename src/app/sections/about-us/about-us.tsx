@@ -1,25 +1,40 @@
+import Image from "next/image";
 import styles from "./about-us.module.css";
 
 const AboutUs = () => {
   return (
-    <section className={styles.container}>
-      <span>Casa de oração - Campinas</span>
-      <h1>House of Prayer</h1>
-      <p className={styles.subtitle}>Precursores do reino dos céus</p>
-      <blockquote className={styles.description}>
-        “E tu, ó menino, serás chamado profeta do Altíssimo, Porque hás de ir ante a face do Senhor,
-        a preparar os seus caminhos;
-        <br />
-        <br />
-        Para dar ao seu povo conhecimento da salvação, Na remissão dos seus pecados;Pelas entranhas
-        da misericórdia do nosso Deus, Com que o oriente do alto nos visitou;
-        <br />
-        <br />
-        Para iluminar aos que estão assentados em trevas e na sombra da morte; A fim de dirigir os
-        nossos pés pelo caminho da paz.”
-        <br />
-        <br />- Lucas 1:76-79
-      </blockquote>
+    <section id="sobre-nos" className={styles.container}>
+      <div className={styles.leftContent}>
+        <span className={styles.title}>nossa missão</span>
+        <h1>
+          Harpa & Taça -
+          <br />
+          Oração e adoração
+        </h1>
+        <span className={styles.description}>
+          Como João Batista (Lucas 1:76-79) e a profetiza Ana (Lucas 2:36-38), que eram precursores
+          de Jesus Cristo na Terra, o primeiro preparando o caminho com a palavra revelada no
+          deserto e a segunda estabelecendo um trono ao Salvador com orações e consagração dia e
+          noite - nossa missão é preparar o caminho para a volta de Jesus.
+        </span>
+        <div className={styles.cardboard}>
+          <div className={styles.verticalLine} />
+          <div className={styles.cardContent}>
+            <span>
+              "Estabelecer a oração e adoração dia e noite, a fim de conectar nossos corações ao
+              coração do Noivo."
+            </span>
+            <p>modelo harpa & taça</p>
+          </div>
+        </div>
+      </div>
+      <Image
+        className={styles.image}
+        src={"/images/calice.jpg"}
+        alt="Harpa e Taça"
+        width={430}
+        height={580}
+      />
     </section>
   );
 };
